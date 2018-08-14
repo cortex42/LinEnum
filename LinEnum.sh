@@ -1501,7 +1501,7 @@ else
   :
 fi
 
-#show files with interesting capabilities
+#show files with set capabilities
 capabilities=`getcap -r / 2>/dev/null`
 if [ "$capabilities" ]; then
   echo -e "\e[00;33m[+] Files with set capabilities:\e[00m\n$capabilities"
